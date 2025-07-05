@@ -1,0 +1,865 @@
+{
+    "counties": [
+        {
+            "number": 1,
+            "name": "Nairobi",
+            "districts": [
+                {
+                    "name": "Westlands",
+                    "divisions": [
+                        {
+                            "name": "Kitisuru",
+                            "locations": [
+                                { "name": "Kitisuru", "subLocations": ["Highridge", "Kyuna", "Lower Kabete"] },
+                                { "name": "Parklands", "subLocations": ["Spring Valley", "Loresho", "Brookside"] }
+                            ]
+                        },
+                        {
+                            "name": "Kangemi",
+                            "locations": [
+                                { "name": "Kangemi", "subLocations": ["Kangemi West", "Kangemi East"] }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Dagoretti North",
+                    "divisions": [
+                        {
+                            "name": "Kilimani",
+                            "locations": [
+                                { "name": "Kilimani", "subLocations": ["Kilimani", "Kileleshwa", "Thompson"] }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Embakasi East",
+                    "divisions": [
+                        {
+                            "name": "Embakasi",
+                            "locations": [
+                                { "name": "Mihango", "subLocations": ["Mihango", "Utawala"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Mombasa",
+            "districts": [
+                {
+                    "name": "Mombasa Island",
+                    "divisions": [
+                        {
+                            "name": "Majengo",
+                            "locations": [
+                                { "name": "Old Town", "subLocations": ["Makadara", "Tudor", "Bondeni"] }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Nyali",
+                    "divisions": [
+                        {
+                            "name": "Kadzandani",
+                            "locations": [
+                                { "name": "Kongowea", "subLocations": ["Kongowea North", "Kongowea South"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Kiambu",
+            "districts": [
+                {
+                    "name": "Thika Town",
+                    "divisions": [
+                        {
+                            "name": "Thika West",
+                            "locations": [
+                                { "name": "Kamenu", "subLocations": ["Kamenu", "Ngoliba"] }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Kiambaa",
+                    "divisions": [
+                        {
+                            "name": "Karuri",
+                            "locations": [
+                                { "name": "Banana", "subLocations": ["Banana Hill", "Muchatha"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Baringo",
+            "districts": [
+                {
+                    "name": "Baringo Central",
+                    "divisions": [
+                        {
+                            "name": "Kabarnet",
+                            "locations": [
+                                { "name": "Kapropita", "subLocations": ["Kapropita", "Kaptimbor"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Bomet",
+            "districts": [
+                {
+                    "name": "Bomet Central",
+                    "divisions": [
+                        {
+                            "name": "Bomet",
+                            "locations": [
+                                { "name": "Silibwet", "subLocations": ["Silibwet", "Ndarawetta"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "name": "Bungoma",
+            "districts": [
+                {
+                    "name": "Bungoma South",
+                    "divisions": [
+                        {
+                            "name": "Kanduyi",
+                            "locations": [
+                                { "name": "Bukembe", "subLocations": ["Bukembe East", "Bukembe West"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Busia",
+            "districts": [
+                {
+                    "name": "Busia",
+                    "divisions": [
+                        {
+                            "name": "Busia Township",
+                            "locations": [
+                                { "name": "Burumba", "subLocations": ["Burumba", "Mayenje"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Elgeyo-Marakwet",
+            "districts": [
+                {
+                    "name": "Marakwet West",
+                    "divisions": [
+                        {
+                            "name": "Kapsowar",
+                            "locations": [
+                                { "name": "Kapsowar", "subLocations": ["Kapsowar", "Kapchemutwa"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Embu",
+            "districts": [
+                {
+                    "name": "Manyatta",
+                    "divisions": [
+                        {
+                            "name": "Runyenjes",
+                            "locations": [
+                                { "name": "Kanja", "subLocations": ["Kanja", "Karurumo"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Garissa",
+            "districts": [
+                {
+                    "name": "Garissa Township",
+                    "divisions": [
+                        {
+                            "name": "Garissa",
+                            "locations": [
+                                { "name": "Waberi", "subLocations": ["Waberi", "Bulla"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Homa Bay",
+            "districts": [
+                {
+                    "name": "Homa Bay Town",
+                    "divisions": [
+                        {
+                            "name": "Homa Bay Central",
+                            "locations": [
+                                { "name": "Arujo", "subLocations": ["Arujo", "Kowuor"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "name": "Isiolo",
+            "districts": [
+                {
+                    "name": "Isiolo North",
+                    "divisions": [
+                        {
+                            "name": "Isiolo",
+                            "locations": [
+                                { "name": "Bulla Pesa", "subLocations": ["Bulla Pesa", "Kiwanjani"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Kajiado",
+            "districts": [
+                {
+                    "name": "Kajiado Central",
+                    "divisions": [
+                        {
+                            "name": "Namanga",
+                            "locations": [
+                                { "name": "Namanga", "subLocations": ["Namanga", "Maili Tisa"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Kakamega",
+            "districts": [
+                {
+                    "name": "Lugari",
+                    "divisions": [
+                        {
+                            "name": "Lumakanda",
+                            "locations": [
+                                { "name": "Mautuma", "subLocations": ["Mautuma", "Chekalini"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "name": "Kericho",
+            "districts": [
+                {
+                    "name": "Kericho East",
+                    "divisions": [
+                        {
+                            "name": "Kericho",
+                            "locations": [
+                                { "name": "Kapsoit", "subLocations": ["Kapsoit", "Kapsaos"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "name": "Kilifi",
+            "districts": [
+                {
+                    "name": "Kilifi North",
+                    "divisions": [
+                        {
+                            "name": "Kilifi Town",
+                            "locations": [
+                                { "name": "Mnarani", "subLocations": ["Mnarani", "Kibarani"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "name": "Kirinyaga",
+            "districts": [
+                {
+                    "name": "Mwea",
+                    "divisions": [
+                        {
+                            "name": "Mwea West",
+                            "locations": [
+                                { "name": "Kangai", "subLocations": ["Kangai", "Mutithi"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "name": "Kisii",
+            "districts": [
+                {
+                    "name": "Kisii Central",
+                    "divisions": [
+                        {
+                            "name": "Kisii Town",
+                            "locations": [
+                                { "name": "Nyakoe", "subLocations": ["Nyakoe", "Riana"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "name": "Kisumu",
+            "districts": [
+                {
+                    "name": "Kisumu Central",
+                    "divisions": [
+                        {
+                            "name": "Kisumu Town",
+                            "locations": [
+                                { "name": "Milimani", "subLocations": ["Milimani", "Shauri Moyo"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "name": "Kitui",
+            "districts": [
+                {
+                    "name": "Kitui Central",
+                    "divisions": [
+                        {
+                            "name": "Kitui Town",
+                            "locations": [
+                                { "name": "Kyangwithya", "subLocations": ["Kyangwithya East", "Kyangwithya West"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 21,
+            "name": "Kwale",
+            "districts": [
+                {
+                    "name": "Msambweni",
+                    "divisions": [
+                        {
+                            "name": "Msambweni",
+                            "locations": [
+                                { "name": "Kingwede", "subLocations": ["Kingwede", "Shirazi"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 22,
+            "name": "Laikipia",
+            "districts": [
+                {
+                    "name": "Laikipia East",
+                    "divisions": [
+                        {
+                            "name": "Nanyuki",
+                            "locations": [
+                                { "name": "Thingithu", "subLocations": ["Thingithu", "Nturukuma"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 23,
+            "name": "Lamu",
+            "districts": [
+                {
+                    "name": "Lamu West",
+                    "divisions": [
+                        {
+                            "name": "Lamu Town",
+                            "locations": [
+                                { "name": "Shella", "subLocations": ["Shella", "Mkomani"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 24,
+            "name": "Machakos",
+            "districts": [
+                {
+                    "name": "Machakos Town",
+                    "divisions": [
+                        {
+                            "name": "Machakos Central",
+                            "locations": [
+                                { "name": "Mumbuni", "subLocations": ["Mumbuni North", "Mumbuni South"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 25,
+            "name": "Makueni",
+            "districts": [
+                {
+                    "name": "Makueni",
+                    "divisions": [
+                        {
+                            "name": "Wote",
+                            "locations": [
+                                { "name": "Nziu", "subLocations": ["Nziu", "Kikumini"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 26,
+            "name": "Mandera",
+            "districts": [
+                {
+                    "name": "Mandera East",
+                    "divisions": [
+                        {
+                            "name": "Mandera Town",
+                            "locations": [
+                                { "name": "Bulla Mpya", "subLocations": ["Bulla Mpya", "Kamora"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 27,
+            "name": "Marsabit",
+            "districts": [
+                {
+                    "name": "Marsabit Central",
+                    "divisions": [
+                        {
+                            "name": "Marsabit",
+                            "locations": [
+                                { "name": "Dirib Gombo", "subLocations": ["Dirib Gombo", "Sagante"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 28,
+            "name": "Meru",
+            "districts": [
+                {
+                    "name": "Imenti North",
+                    "divisions": [
+                        {
+                            "name": "Meru Town",
+                            "locations": [
+                                { "name": "Milimani", "subLocations": ["Milimani", "Kaaga"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 29,
+            "name": "Migori",
+            "districts": [
+                {
+                    "name": "Migori",
+                    "divisions": [
+                        {
+                            "name": "Migori Town",
+                            "locations": [
+                                { "name": "Oruba", "subLocations": ["Oruba", "God Jope"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 30,
+            "name": "Murang'a",
+            "districts": [
+                {
+                    "name": "Murang'a South",
+                    "divisions": [
+                        {
+                            "name": "Murang'a Town",
+                            "locations": [
+                                { "name": "Mukuyu", "subLocations": ["Mukuyu", "Kambiti"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 31,
+            "name": "Nandi",
+            "districts": [
+                {
+                    "name": "Nandi Hills",
+                    "divisions": [
+                        {
+                            "name": "Nandi Hills",
+                            "locations": [
+                                { "name": "Chepkumia", "subLocations": ["Chepkumia", "Kapkerer"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 32,
+            "name": "Narok",
+            "districts": [
+                {
+                    "name": "Narok North",
+                    "divisions": [
+                        {
+                            "name": "Narok Town",
+                            "locations": [
+                                { "name": "Olaiserr", "subLocations": ["Olaiserr", "Naisoya"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 33,
+            "name": "Nyamira",
+            "districts": [
+                {
+                    "name": "Nyamira South",
+                    "divisions": [
+                        {
+                            "name": "Nyamira Town",
+                            "locations": [
+                                { "name": "Bosamaro", "subLocations": ["Bosamaro", "Bonyamatuta"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 34,
+            "name": "Nyandarua",
+            "districts": [
+                {
+                    "name": "Nyandarua Central",
+                    "divisions": [
+                        {
+                            "name": "Ol Kalou",
+                            "locations": [
+                                { "name": "Rurii", "subLocations": ["Rurii", "Githioro"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 35,
+            "name": "Nyeri",
+            "districts": [
+                {
+                    "name": "Nyeri Town",
+                    "divisions": [
+                        {
+                            "name": "Nyeri Central",
+                            "locations": [
+                                { "name": "Kamakwa", "subLocations": ["Kamakwa", "Mukaro"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 36,
+            "name": "Samburu",
+            "districts": [
+                {
+                    "name": "Samburu Central",
+                    "divisions": [
+                        {
+                            "name": "Maralal",
+                            "locations": [
+                                { "name": "Loosuk", "subLocations": ["Loosuk", "Porro"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 37,
+            "name": "Siaya",
+            "districts": [
+                {
+                    "name": "Siaya",
+                    "divisions": [
+                        {
+                            "name": "Siaya Town",
+                            "locations": [
+                                { "name": "Nyandiwa", "subLocations": ["Nyandiwa", "Mulaha"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 38,
+            "name": "Taita-Taveta",
+            "districts": [
+                {
+                    "name": "Voi",
+                    "divisions": [
+                        {
+                            "name": "Voi Town",
+                            "locations": [
+                                { "name": "Kirutai", "subLocations": ["Kirutai", "Mbololo"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 39,
+            "name": "Tana River",
+            "districts": [
+                {
+                    "name": "Tana River",
+                    "divisions": [
+                        {
+                            "name": "Garsen",
+                            "locations": [
+                                { "name": "Garsen", "subLocations": ["Garsen North", "Garsen South"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 40,
+            "name": "Tharaka-Nithi",
+            "districts": [
+                {
+                    "name": "Tharaka South",
+                    "divisions": [
+                        {
+                            "name": "Chuka",
+                            "locations": [
+                                { "name": "Karingani", "subLocations": ["Karingani", "Mugirirwa"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 41,
+            "name": "Trans Nzoia",
+            "districts": [
+                {
+                    "name": "Kitale",
+                    "divisions": [
+                        {
+                            "name": "Kitale Town",
+                            "locations": [
+                                { "name": "Tuwan", "subLocations": ["Tuwan", "Kiminini"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 42,
+            "name": "Turkana",
+            "districts": [
+                {
+                    "name": "Turkana Central",
+                    "divisions": [
+                        {
+                            "name": "Lodwar",
+                            "locations": [
+                                { "name": "Kanamkemer", "subLocations": ["Kanamkemer", "Napetet"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 43,
+            "name": "Uasin Gishu",
+            "districts": [
+                {
+                    "name": "Eldoret",
+                    "divisions": [
+                        {
+                            "name": "Eldoret East",
+                            "locations": [
+                                { "name": "Huruma", "subLocations": ["Huruma", "Kapsuswa"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 44,
+            "name": "Vihiga",
+            "districts": [
+                {
+                    "name": "Vihiga",
+                    "divisions": [
+                        {
+                            "name": "Vihiga Town",
+                            "locations": [
+                                { "name": "Lugaga", "subLocations": ["Lugaga", "Wamuluma"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 45,
+            "name": "Wajir",
+            "districts": [
+                {
+                    "name": "Wajir East",
+                    "divisions": [
+                        {
+                            "name": "Wajir Town",
+                            "locations": [
+                                { "name": "Hodhan", "subLocations": ["Hodhan", "Barwaqo"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 46,
+            "name": "West Pokot",
+            "districts": [
+                {
+                    "name": "West Pokot",
+                    "divisions": [
+                        {
+                            "name": "Kapenguria",
+                            "locations": [
+                                { "name": "Siyoi", "subLocations": ["Siyoi", "Keringet"] }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "placesOfIssue": [
+        "Huduma Centre GPO Nairobi",
+        "Huduma Centre City Square Nairobi",
+        "Huduma Centre Makadara Nairobi",
+        "Huduma Centre Kibera Nairobi",
+        "Huduma Centre Eastleigh Nairobi",
+        "Huduma Centre Mombasa",
+        "Huduma Centre Kisumu",
+        "Huduma Centre Nakuru",
+        "Huduma Centre Eldoret",
+        "Huduma Centre Nyeri",
+        "Huduma Centre Thika",
+        "Huduma Centre Kakamega",
+        "Huduma Centre Machakos",
+        "Huduma Centre Embu",
+        "Huduma Centre Meru",
+        "Nyayo House Nairobi",
+        "District Commissioner Nairobi",
+        "District Commissioner Mombasa",
+        "District Commissioner Kisumu",
+        "District Commissioner Nakuru",
+        "District Commissioner Nyeri",
+        "District Commissioner Thika",
+        "District Commissioner Kakamega",
+        "District Commissioner Machakos",
+        "District Commissioner Embu",
+        "District Commissioner Meru"
+    ]
+}

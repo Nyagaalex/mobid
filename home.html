@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modbid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a class="nav-link" href="home.html">Home</a>
+            <div class="nav-btn-group">
+
+                <!-- purhasing logic -->
+                <form action="purchase.php" method="get" style="display:inline;">
+                    <button class="btn btn-navbar" type="submit" name="action" value="bind">Bind</button>
+                </form>
+                <form action="purchase.php" method="get" style="display:inline;">
+                    <button class="btn btn-navbar btn-primary" type="submit" name="action" value="purchase">Purchase</button>
+                </form>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="profileDropdown" aria-expanded="false">
+                Settings <i class="fas fa-caret-down" id="dropdownIcon"></i>
+            </a>
+            <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                <li><a class="dropdown-item" href="contact.php">Contact Us</a></li>
+                <li>
+                    <a class="dropdown-item" href="#" id="toggleTheme">
+                        <i class="fas fa-moon"></i> Dark Theme
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <h1>Welcome to modbid binds</h1>
+        <p>Use the form below to search for existing binds or create new ones.</p>
+
+        <!-- Search/Create Binds Section -->
+        <div class="container">
+            <h2>Search / Create Binds</h2>
+            <form id="searchForm">
+                <div class="input-grid search-grid">
+                    <div class="input-group">
+                        <label for="county">County</label>
+                        <select id="county" required>
+                            <option value="" disabled selected>Select county</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="district">District</label>
+                        <select id="district" required>
+                            <option value="" disabled selected>Select district</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="division">Division</label>
+                        <select id="division" required>
+                            <option value="" disabled selected>Select division</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="location">Location</label>
+                        <select id="location" required>
+                            <option value="" disabled selected>Select location</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="sub-location">Sub-location</label>
+                        <select id="sub-location" required>
+                            <option value="" disabled selected>Select sub-location</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="issue-place">Place of Issue</label>
+                        <select id="issue-place" required>
+                            <option value="" disabled selected>Select place of issue</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="file2">Choose Photo (Optional)</label>
+                        <input type="file" id="file2" accept="image/*">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-small" onclick="discard()" title="Clear all fields">Discard</button>
+                    <button type="submit" class="btn btn-small btn-primary" title="Generate ID preview">Submit <i class="fas fa-spinner fa-spin hidden"></i></button>
+                </div>
+            </form>
+            <div class="canvas-container">
+                <canvas id="idCanvas" width="337" height="213"></canvas>
+                <div class="canvas-controls">
+                    <button class="btn btn-small btn-icon" id="flipButton" aria-label="Flip ID card" title="Flip to view back" disabled>
+                        <i class="fas fa-sync-alt"></i> Flip
+                    </button>
+                    <button class="btn btn-small btn-primary" id="downloadButton" title="Download ID images" disabled>Download ID</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Divider -->
+        <hr class="section-divider">
+
+        <!-- Enter Details to Bind Section -->
+        <div class="container">
+            <h2>Enter Details to Bind</h2>
+            <form id="bindForm" method="POST" action="purchase.php">
+                <div class="input-grid bind-grid">
+                    <div class="input-group">
+                        <label for="serial">Serial Number</label>
+                        <input type="text" id="serial" name="serial" placeholder="" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="surname">Surname*</label>
+                        <input type="text" id="surname" name="surname" placeholder="Enter surname" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="fname">First Name*</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lname">Last Name (Optional)</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter last name">
+                    </div>
+                    <div class="input-group">
+                        <label for="gender">Gender*</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="idno">ID Number</label>
+                        <input type="text" id="idno" name="idno" placeholder="" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="issue-place2">Place of Issue</label>
+                        <select id="issue-place2" name="issuePlace2" required>
+                            <option value="" disabled selected>Select place of issue</option>
+                        </select>
+                    </div>
+                    <!--placeOfBirth and issuePlace2 -->
+                    <input type="hidden" name="placeOfBirth" id="placeOfBirth">
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-small" onclick="discard()" title="Clear all fields">Discard</button>
+                    <button type="submit" class="btn btn-small btn-primary" title="Generate ID">Generate <i class="fas fa-spinner fa-spin hidden"></i></button>
+                </div>
+            </form>
+            <div id="purchaseMessage" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

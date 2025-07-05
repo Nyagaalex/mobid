@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart | my binds</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cart-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(102,126,173,0.13);
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        .cart-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #4e54c8;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+        .cart-table th, .cart-table td {
+            border: 1px solid #e2e2e2;
+            padding: 0.7rem 1rem;
+            text-align: left;
+        }
+        .cart-table th {
+            background: #f5f6fa;
+            color: #07001f;
+        }
+        .cart-summary {
+            text-align: right;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+        .btn-home {
+            background: #4e54c8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-home:hover {
+            background: #3b3f9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h2 class="cart-title"><i class="fas fa-shopping-cart"></i> Your Purchased IDs</h2>
+        <table class="cart-table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ID Number</th>
+                    <th>Serial</th>
+                    <th>Amount (Ksh)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be inserted here by JS -->
+            </tbody>
+        </table>
+        <div class="cart-summary" id="cartSummary">
+            Total IDs: 0<br>
+            Total Amount: Ksh 0
+        </div>
+        <a href="home.html" class="btn-home">Back to Home</a>
+    </div>
+    <script>
+    //Replace this with AJAX/fetch to backend
+    document.addEventListener('DOMContentLoaded', function() {
+        // Try to get cart data from localStorage
+        let cart = [];
+        try {
+            cart = JSON.parse(localStorage.getItem('cart')) || [];
+        } catch (e) {
+            cart = [];
+        }
+
+        const tbody = document.querySelector('#cartTable tbody');
+        const summary = document.getElementById('cartSummary');
+        let totalAmount = 0;
+
+        if (cart.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;">No IDs purchased yet.</td></tr>';
+        } else {
+            cart.forEach((item, idx) => {
+                totalAmount += Number(item.amount);
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${idx + 1}</td>
+                    <td>${item.idno}</td>
+                    <td>${item.serial}</td>
+                    <td>Ksh ${item.amount}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+        summary.innerHTML = `Total IDs: ${cart.length}<br>Total Amount: Ksh ${totalAmount}`;
+    });
+    </script>
+</body>
+</html>
